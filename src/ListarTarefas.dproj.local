@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/09/20 20:33:40.000.812,=C:\Users\Suporte\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/20 20:36:22.000.357,C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\view\ListarTarefas.view.main.pas=C:\Users\Suporte\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/20 20:36:22.000.357,C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\view\ListarTarefas.view.main.dfm=C:\Users\Suporte\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/09/20 20:36:44.000.920,C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\ListarTarefas.dproj=C:\Users\Suporte\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/09/20 20:41:05.000.526,=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Unit1.pas</Transaction>
+    <Transaction>2023/09/20 20:45:12.000.902,C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\model\ListarTarefas.model.pessoa.pas=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Unit1.pas</Transaction>
+    <Transaction>2023/09/20 20:45:33.000.015,=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Unit1.pas</Transaction>
+    <Transaction>2023/09/20 21:14:42.000.009,C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\model\ListarTarefas.model.tarefas.pas=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Unit1.pas</Transaction>
+    <Transaction>2023/09/25 21:10:17.000.877,=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\view\ListarTarefas.view.CadastroUsuarios.pas</Transaction>
+    <Transaction>2023/09/25 21:13:18.000.966,=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\view\ListarTarefas.view.CadastroTarefas.pas</Transaction>
+    <Transaction>2023/09/25 21:25:13.000.833,=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Unit1.pas</Transaction>
+    <Transaction>2023/09/25 21:27:49.000.417,C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\view\ListarTarefas.view.Login.pas=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Unit1.pas</Transaction>
+    <Transaction>2023/09/25 21:27:49.000.417,C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\view\ListarTarefas.view.Login.dfm=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Unit1.dfm</Transaction>
+    <Transaction>2023/10/12 18:56:07.000.888,=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Unit1.pas</Transaction>
+    <Transaction>2023/10/12 19:22:51.000.534,C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\model\conexao\ListarTarefas.model.conexao.pas=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Unit1.pas</Transaction>
+    <Transaction>2023/10/12 19:22:51.000.534,C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\model\conexao\ListarTarefas.model.conexao.dfm=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Unit1.dfm</Transaction>
+    <Transaction>2023/10/16 17:40:51.000.568,=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Unit1.pas</Transaction>
+    <Transaction>2023/10/16 17:56:11.000.418,C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Unit1.pas=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Dao\ListarTarefas.Dao.usuario.pas</Transaction>
+    <Transaction>2023/10/25 20:11:12.000.141,=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Unit1.pas</Transaction>
+    <Transaction>2023/10/25 20:11:28.000.380,C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Dao\ListarTarefas.Dao.Tarefas.pas=C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
