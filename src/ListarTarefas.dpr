@@ -10,7 +10,8 @@ uses
   ListarTarefas.view.Login in 'view\ListarTarefas.view.Login.pas' {FrmLogin},
   ListarTarefas.model.conexao in 'model\conexao\ListarTarefas.model.conexao.pas' {DmConexao: TDataModule},
   ListarTarefas.Dao.usuario in 'Dao\ListarTarefas.Dao.usuario.pas',
-  ListarTarefas.Dao.Tarefas in 'Dao\ListarTarefas.Dao.Tarefas.pas';
+  ListarTarefas.Dao.Tarefas in 'Dao\ListarTarefas.Dao.Tarefas.pas',
+  ListarTarefas.model.login in 'model\ListarTarefas.model.login.pas';
 
 {$R *.res}
 

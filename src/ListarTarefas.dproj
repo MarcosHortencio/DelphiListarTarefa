@@ -125,6 +125,7 @@
         </DCCReference>
         <DCCReference Include="Dao\ListarTarefas.Dao.usuario.pas"/>
         <DCCReference Include="Dao\ListarTarefas.Dao.Tarefas.pas"/>
+        <DCCReference Include="model\ListarTarefas.model.login.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

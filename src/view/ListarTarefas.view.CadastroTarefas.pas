@@ -46,6 +46,9 @@ var
 
 implementation
 
+uses
+  ListarTarefas.Dao.Tarefas, ListarTarefas.view.main;
+
 {$R *.dfm}
 { TFrmCadastroTarefas }
 
@@ -57,17 +60,33 @@ end;
 procedure TFrmCadastroTarefas.BtnSalvarClick(Sender: TObject);
 var
   Ltarefa: ttarefas;
+  ldao:TDaoListarTarefas;
 begin
   Ltarefa := ttarefas.Create;
-  with Ltarefa do
-  begin
-    Codigo := Ftarefas.count + 1;
-    IdUsuario := 1;
-    titulo := EdtTitulo.Text;
-    Descricao := memDescricao.Text;
-    DataCriacao:=now;
+  ldao:=TDaoListarTarefas.create;
+
+  try
+
+      with Ltarefa do
+      begin
+        Codigo := Ftarefas.count + 1;
+        IdUsuario := FrmMain.Fusuario.id;
+        titulo := EdtTitulo.Text;
+        Descricao := memDescricao.Text;
+        DataCriacao:=now;
+      end;
+
+      if not ldao.existeTarefa(ltarefa.titulo) then
+         ldao.Inserir(ltarefa)
+      else
+         ShowMessage('Tarefa ja existe !');
+
+
+  finally
+      Ltarefa.DisposeOf;
+      ldao.Free;
   end;
-  Ftarefas.Add(Ltarefa);
+
   EdtTitulo.Clear;
   memDescricao.Clear;
 

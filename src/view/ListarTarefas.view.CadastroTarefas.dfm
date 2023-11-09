@@ -20,8 +20,6 @@ object FrmCadastroTarefas: TFrmCadastroTarefas
     Height = 359
     Align = alClient
     TabOrder = 0
-    ExplicitWidth = 537
-    ExplicitHeight = 358
     object PnlTitulo: TPanel
       Left = 1
       Top = 1
@@ -29,7 +27,6 @@ object FrmCadastroTarefas: TFrmCadastroTarefas
       Height = 56
       Align = alTop
       TabOrder = 0
-      ExplicitWidth = 535
       object Label1: TLabel
         Left = 1
         Top = 1
@@ -55,8 +52,6 @@ object FrmCadastroTarefas: TFrmCadastroTarefas
       Height = 41
       Align = alBottom
       TabOrder = 1
-      ExplicitTop = 316
-      ExplicitWidth = 535
       object BtnFechar: TButton
         Left = 463
         Top = 1
@@ -66,7 +61,6 @@ object FrmCadastroTarefas: TFrmCadastroTarefas
         Caption = 'Fechar'
         TabOrder = 0
         OnClick = BtnFecharClick
-        ExplicitLeft = 459
       end
       object BtnSalvar: TButton
         Left = 1
@@ -86,8 +80,6 @@ object FrmCadastroTarefas: TFrmCadastroTarefas
       Height = 260
       Align = alClient
       TabOrder = 2
-      ExplicitWidth = 535
-      ExplicitHeight = 259
       object EdtTitulo: TEdit
         Left = 16
         Top = 16

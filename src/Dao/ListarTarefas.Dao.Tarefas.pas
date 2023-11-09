@@ -19,12 +19,15 @@ type
     procedure Excluir(value: Integer);
     function Alterar(value: Ttarefas): Ttarefas;
     function Procurar(value: Ttarefas): Ttarefas;
+    function existeTarefa(value:String): Boolean;
+
+
 
   end;
 
 implementation
 uses
-  System.SysUtils, Vcl.Dialogs;
+  System.SysUtils, Vcl.Dialogs, ListarTarefas.model.pessoa;
 
 
 { TDaoListarTarefas }
@@ -36,8 +39,8 @@ end;
 
 destructor TDaoListarTarefas.Destroy;
 begin
-  Fconn.Free;
   inherited;
+  Fconn.Free;
 end;
 
 procedure TDaoListarTarefas.Inserir(value: Ttarefas);
@@ -54,7 +57,7 @@ begin
 
   except
     Fconn.RollBack;
-    raise Exception.Create('Erro ao tentar atualizar !');
+    raise Exception.Create('Erro ao tentar Inseir !');
   end;
 
 end;
@@ -71,6 +74,29 @@ begin
   except
     raise Exception.Create('Erro ao excluir tarefa ...');
   end;
+
+end;
+
+function TDaoListarTarefas.existeTarefa(value: String): Boolean;
+begin
+ fconn.StartTransaction;
+ try
+   fconn.Sql('select * from tarefas t where t.titulo = :Titulo');
+   fconn.Params('titulo',value);
+   fconn.Open;
+
+   if Fconn.DataSet.IsEmpty then
+      result:=false
+   else
+      result:=true;
+ Except
+on E: Exception do
+  begin
+    ShowMessage('Erro: ' + E.Message );
+  end;
+
+ end;
+
 
 end;
 
@@ -95,6 +121,7 @@ begin
 end;
 
 function TDaoListarTarefas.Procurar(value: Ttarefas): Ttarefas;
+
 begin
  fconn.StartTransaction;
  try
@@ -108,13 +135,19 @@ begin
         exit;
       end;
 
-   ////preencher o result ....
-
-
-   result:=value;
+   Result:=Ttarefas.Create;
+   result.Codigo     := Fconn.DataSet.FieldByName('id').AsInteger;
+   result.IdUsuario  := Fconn.DataSet.FieldByName('isusuario').AsInteger;
+   result.titulo     := Fconn.DataSet.FieldByName('titulo').AsString;
+   result.Descricao  := Fconn.DataSet.FieldByName('descricao').AsString;
+   result.DataCriacao:= Fconn.DataSet.FieldByName('datacriavao').AsDateTime;
 
 
  except
+  on E: Exception do
+    begin
+      ShowMessage('Erro: ' + E.Message );
+  end;
 
  end;
 end;

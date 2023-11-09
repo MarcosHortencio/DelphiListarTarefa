@@ -34,12 +34,13 @@ type
   private
     { Private declarations }
     FdaoUsuario:tdaousuario;
-    Fusuario:Tusuario;
+
     function validaUsuario(aEmail, aSenha: string): boolean;
     procedure PreencheListView(atarefas:TObjectList<ttarefas>);
 
   public
     { Public declarations }
+    Fusuario:Tusuario;
   end;
 
 var
@@ -114,6 +115,7 @@ begin
 
   finally
     lLogin.Free;
+
   end;
 
 end;

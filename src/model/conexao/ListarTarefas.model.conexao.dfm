@@ -15,8 +15,8 @@ object DmConexao: TDmConexao
   end
   object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
     VendorLib = 
-      'C:\projetos\delphi\acdemiaCodigo\ListarTarefas\src\dlls\libmysql' +
-      '55.dll'
+      'C:\projetos\delphi\acdemiaCodigo\GitListarTarefas\src\dlls\libmy' +
+      'sql55.dll'
     Left = 72
     Top = 96
   end

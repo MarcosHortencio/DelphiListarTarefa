@@ -25,8 +25,6 @@ object FrmMain: TFrmMain
     Padding.Right = 3
     Padding.Bottom = 3
     TabOrder = 0
-    ExplicitWidth = 534
-    ExplicitHeight = 422
     object PnlBotoeira: TPanel
       Left = 4
       Top = 369
@@ -38,8 +36,6 @@ object FrmMain: TFrmMain
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 0
-      ExplicitTop = 368
-      ExplicitWidth = 526
       object BtnFechar: TButton
         Left = 451
         Top = 4
@@ -49,7 +45,6 @@ object FrmMain: TFrmMain
         Caption = 'Fechar'
         TabOrder = 0
         OnClick = BtnFecharClick
-        ExplicitLeft = 447
       end
       object BtnNovo: TButton
         Left = 4
@@ -81,7 +76,6 @@ object FrmMain: TFrmMain
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 1
-      ExplicitWidth = 526
       object Label1: TLabel
         Left = 4
         Top = 4
@@ -106,7 +100,6 @@ object FrmMain: TFrmMain
       Height = 33
       Align = alTop
       TabOrder = 2
-      ExplicitWidth = 526
       object EdtPesquisar: TEdit
         Left = 1
         Top = 1
@@ -120,7 +113,6 @@ object FrmMain: TFrmMain
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 0
-        ExplicitWidth = 404
         ExplicitHeight = 40
       end
       object BtnPesquisar: TButton
@@ -131,7 +123,6 @@ object FrmMain: TFrmMain
         Align = alRight
         Caption = 'Pesquisar'
         TabOrder = 1
-        ExplicitLeft = 405
       end
     end
     object PnlLista: TPanel
@@ -141,8 +132,6 @@ object FrmMain: TFrmMain
       Height = 282
       Align = alClient
       TabOrder = 3
-      ExplicitWidth = 526
-      ExplicitHeight = 281
       object ListView1: TListView
         Left = 1
         Top = 1
@@ -163,8 +152,6 @@ object FrmMain: TFrmMain
           end>
         TabOrder = 0
         ViewStyle = vsReport
-        ExplicitWidth = 524
-        ExplicitHeight = 279
       end
     end
   end
